@@ -1,0 +1,15 @@
+user profile:
+  show public/private data  07/11
+  edit data 09/11
+  add status message 11/11
+  show latest message with comment 13/11
+  show previous message 30/11
+
+events:
+  creation  15/11
+  modification of the event 17/11
+  show event on user profile  19/11
+  url+ information for each event 21/11
+  page for all events  23/11
+  redirect uninveted user   25/11
+  send invation from creator or already invited user 27/11

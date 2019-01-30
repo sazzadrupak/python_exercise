@@ -1,0 +1,63 @@
+#####################################################################
+# Remember (since a friendship is defined to be a two way
+# relationship) that the following single line in the input file:
+#
+# A;B;C
+#
+# will automatically add all the following relationships in the
+# data structure which is used to store the friendships in your
+# Python program:
+#
+# A-B
+# A-C
+# B-A
+# C-A
+#
+#####################################################################
+Helen;Greta;Florian;Irina
+Irina;Helen;Greta;Florian;Erin;James
+Greta;Helen;Irina;Florian
+#####################################################################
+# The following line is purposely commented out.
+#
+# Florian;Brutus;Anna;James;Irina;Helen;Greta
+#
+# It is just an example of how comments can be temporarily used to
+# ignore lines in the input file for testing purposes or whatever.
+#
+# Can you tell why commenting out the line which lists all Florian's
+# friends have no effect in this particular case?  Hint: read the
+# last commented section at the end of this file.
+#####################################################################
+James;Irina;Florian;Anna;Erin
+Brutus;Celia;Anna;Florian
+#####################################################################
+# In the following three lines Anna's friends are split in multiple
+# lines just to show that it is possible.
+#####################################################################
+Anna;James;Florian
+Anna;Brutus
+Anna;Celia;Erin
+Erin;James;Irina;Anna;David
+Celia;David;Anna;Brutus
+David;Erin;Celia
+Kira;Mia;Lucius
+Lucius;Kira;Nina;Mia
+Mia;Kira;Nina;Lucius
+Nina;Lucius;Mia
+#####################################################################
+# The following lines have no effect since they contain redundant
+# infomation which has already been expressed before.  But these
+# lines are not errorneous, they just don't add any new information
+# into the friendship network.
+#####################################################################
+Anna;Florian;Celia
+Nina;Lucius;Mia
+Mia;Kira
+#>>> parent_child_list = [(960, 965), (960, 988), (359, 364), (359, 365)]
+#>>> [child for parent, child in parent_child_list if parent == 960 ]
+#[965, 988]
+#[(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+#set(j for i in lst for j in i)
+#>>> lst = [1, 2, 3]
+#>>> print('\n'.join('{}: {}'.format(*k) for k in enumerate(lst)))

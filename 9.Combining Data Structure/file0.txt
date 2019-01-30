@@ -1,0 +1,12 @@
+Moominmamma:3.3
+Little My:1.3
+Moominmamma:2.9
+Snorkmaiden:2.2
+Moominmamma:8.9
+Moominpappa:3.9
+Snorkmaiden:3.8
+Moomintroll:2.2
+Moominmamma:1.3
+Snorkmaiden:2.0
+Moomintroll:3.2
+Moominmamma:5.0

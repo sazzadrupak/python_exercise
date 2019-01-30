@@ -1,0 +1,18 @@
+True Detective;Crime,Drama,Mystery
+Orange Is the New Black;Comedy,Crime,Drama
+Game of Thrones;Adventure,Drama,Fantasy
+Sense8;Drama,Sci-Fi
+Suits;Comedy,Drama
+The Walking Dead;Drama,Horror
+Daredevil;Action,Crime,Drama
+Breaking Bad;Crime,Drama,Thriller
+Supernatural;Drama,Fantasy,Horror,Mystery,Thriller
+Vikings;Action,Drama,History,War
+Grey's Anatomy;Drama,Romance
+Orphan Black;Action,Drama,Sci-Fi
+The Big Bang Theory;Comedy
+House of Cards;Drama
+Once Upon A Time;Adventure,Fantasy,Romance
+Friends;Comedy,Romance
+The Wire;Crime,Drama,Thriller
+Battlestar Galactica;Action,Adventure,Drama,Sci-Fi

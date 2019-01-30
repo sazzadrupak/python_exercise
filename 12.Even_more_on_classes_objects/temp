@@ -1,0 +1,40 @@
+    def receive_routing_table(self):
+        """
+        communicate between a router and it's neighbour router
+        :return: None
+        """
+        router_networks = self.get_network()  # get networks of sender router
+
+        if len(router_networks) > 0:  # check if router has networks
+            router_networks.sort()  # router has networks and sort the network list
+
+            # split each network from router network list and save data of network and distance in separate list
+            sender_router_network, sender_router_distance = list(zip(*(list(s.split(":")) for s in router_networks)))
+
+            neighbours = self.get_neighbour()  # get all neighbour routers of a router
+
+            if len(neighbours) > 0:  # check if the router has neighbour router
+                for neighbour in neighbours:  # loop through each neighbor router
+                    neighbour_router_networks = neighbour.get_network()  # get network of a single neighbour router
+                    neigbour_router_network = ''  # initial an empty variable to store neighbour routers' network
+
+                    if len(neighbour_router_networks) > 0:  # check if a neighbour router has networks
+                        neighbour_router_networks.sort()  # sort the networks of neighbour router
+
+                        # get the network(e.g. 100, 200) from neighbour router networks list items and store it in
+                        # nighbour_router_networks as list
+                        neigbour_router_network, neighbour_router_distance = list(
+                           zip(*(list(s.split(":")) for s in neighbour_router_networks)))
+
+                    # compare a base routers network set and neighbour routers' networks set to get not-shared network
+                    # from router network
+
+                    share_networks = (set(sender_router_network) - set(neigbour_router_network))
+
+                    # loop through each not-shared network and share it between neighbour router to communicate
+                    for share_network in share_networks:
+                        # get the not-shared network info(network and distance) from base router networks list
+                        sender_router_network_info = [s for s in router_networks if share_network in s]
+                        # add not-shared network with neighbour router, increase the distance +1
+                        neighbour.add_network(((sender_router_network_info[0].split(":"))[0]),
+                                              str(int(((sender_router_network_info[0].split(":"))[1])) + 1))

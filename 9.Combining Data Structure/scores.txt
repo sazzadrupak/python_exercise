@@ -1,0 +1,4 @@
+JTRO;Pandemonium:604,196,47,6,0,5;Birdie:349,0,0,0,0,1;Loituma:797,426,124,0,0,0
+BTRO;ROM-eo & Juli8:391,51,17,0,0,1;Hybrid:458,150,48,3,0,0;Energizer:345,187,117,5,6,15
+L Dubba E;Tribal Style:350,254,1,0,0,0;Birdie:242,58,38,11,1,0
+BLT;Cow Girl:260,18,0,0,1,0
